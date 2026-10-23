@@ -1,0 +1,95 @@
+/* Basic page defaults */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+/* Basic page defaults */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #212529;
+}
+
+/* Smooth theme transitions */
+body,
+.navbar,
+.card,
+.form-control,
+footer,
+section {
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Dark theme */
+html[data-bs-theme="dark"] body {
+    background-color: #121820;
+    color: #e9ecef;
+}
+
+/* Convert light surfaces to dark surfaces */
+html[data-bs-theme="dark"] .bg-light,
+html[data-bs-theme="dark"] .bg-white {
+    background-color: #1c2530 !important;
+}
+
+/* Improve secondary text contrast */
+html[data-bs-theme="dark"] .text-secondary {
+    color: #b8c2cc !important;
+}
+
+/* Make borders visible on dark surfaces */
+html[data-bs-theme="dark"] .border {
+    border-color: #3a4654 !important;
+}
+
+/* Project and service cards */
+html[data-bs-theme="dark"] .card {
+    background-color: #1c2530;
+    color: #e9ecef;
+}
+
+/* Form labels and controls */
+html[data-bs-theme="dark"] .form-label {
+    color: #e9ecef;
+}
+
+html[data-bs-theme="dark"] .form-control {
+    background-color: #151c24;
+    color: #e9ecef;
+    border-color: #465363;
+}
+
+html[data-bs-theme="dark"] .form-control::placeholder {
+    color: #b8c2cc;
+}
+
+html[data-bs-theme="dark"] .form-control:focus {
+    background-color: #151c24;
+    color: #ffffff;
+    border-color: #86b7fe;
+}
+
+/* Keep the mobile navbar icon visible */
+html[data-bs-theme="dark"] .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* Respect visitors who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    body,
+    .navbar,
+    .card,
+    .form-control,
+    footer,
+    section {
+        transition: none;
+    }
+}
